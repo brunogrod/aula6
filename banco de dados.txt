@@ -1,0 +1,20 @@
+create database bdescola;
+use bdescola;
+
+create database clinica;
+use clinica;
+create table agendamentos (
+	nome varchar(100),
+    especialidade varchar(30),
+    convenio varchar (30),
+    preco float(10,2),
+    dtagenda date
+        );
+        
+        
+select * from agendamentos;
+insert into agendamentos (nome,especialidade,convenio,preco,dtagenda)
+	values ("Bruno","orto","CASSI", 0.0,"2021-11-12");
+    
+insert into agendamentos (nome,especialidade,convenio,preco,dtagenda)  
+	values ("Dani","Perio","Unimed","250.00","2021-12-12");
